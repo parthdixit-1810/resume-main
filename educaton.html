@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EDUCATION</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Share Tech', sans-serif;
+            font-size: 16px;
+            color: #505050;
+            background: #eee;
+            overflow-x: hidden;
+        }
+
+        main {
+            position: relative;
+            padding: 7vh 0 10vh;
+            opacity: 1;
+            margin-top: -5px;
+        }
+
+        @media all and (min-width: 670px) {
+            main {
+                width: 570px;
+                margin-left: 10vw;
+            }
+        }
+
+        @media all and (max-width: 670px) {
+            main {
+                margin: 0 15px;
+            }
+        }
+
+        .wave {
+            width: 100vw;
+            height: 150px;
+            position: fixed;
+            bottom: 0;
+            fill: #1b7477;
+            z-index: -1;
+        }
+
+        #one {
+            height: 180px;
+            fill: #8adbd3;
+            width: 120vw;
+            left: -10vw;
+        }
+
+        h1, h2, h3 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1em;
+            word-spacing: -.1em;
+            letter-spacing: -.05em;
+            transition: .2s all ease;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        h1 span, h2 span, h3 span {
+            background: rgba(238, 238, 238, .7);
+            padding: 5px 7px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3:active {
+            color: #51b5ac;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            cursor: pointer;
+        }
+
+        h3 {
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1b7477;
+            color: #fff;
+        }
+
+        #bg {
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <main>
+        <h1>
+            <div class="hex moved"></div><span>EDUCATION DETAILS</span>
+        </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Course</th>
+                    <th>Institute</th>
+                    <th>Location</th>
+                    <th>Year of Graduation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>High School</td>
+                    <td>High School Certificate</td>
+                    <td>Seth MR Jaipuria School</td>
+                    <td>Lucknow</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <tr>
+                        <td>Senior Secondary</td>
+                        <td>PCM with Computer Science</td>
+                        <td>Surya Public School</td>
+                        <td>Lucknow</td>
+                        <td>2022</td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>Bachelors Degree</td>
+                    <td>Computer Science Engineering</td>
+                    <td>Vellore Institute Of Technology</td>
+                    <td>Vellore</td>
+                    <td>2026</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="one">
+        <path d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"></path>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRITINGS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 670px) {
+            main {
+                margin: 0 15px;
+            }
+        }
+
+        h1, h2, h3 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1em;
+            word-spacing: -.1em;
+            letter-spacing: -.05em;
+            transition: .2s all ease;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        h1 span, h2 span, h3 span {
+            background: rgba(238, 238, 238, .7);
+            padding: 5px 7px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3:active {
+            color: #51b5ac;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            cursor: pointer;
+        }
+
+        h3 {
+            cursor: pointer;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px; 
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 48%; 
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+            font-style: italic; 
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box p {
+            margin: 10px 0; 
+        }
+
+        .wave {
+            width: 100vw;
+            height: 150px;
+            position: fixed;
+            bottom: 0;
+            fill: #1b7477;
+            z-index: -1;
+        }
+
+        #one {
+            height: 180px;
+            fill: #8adbd3;
+            width: 120vw;
+            left: -10vw;
+        }
+
+        #bg {
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <main>
+        <h1>
+            <div class="hex moved"></div><span>WRITINGS</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <h2>HER (POEM)</h2>
+                <p>Since first laying eyes upon your grace, </p>
+                <p>I've thanked god for the creation- that's you.</p>
+                <p>Though heaven's location remains unknown,</p>
+                <p>In your presence, it's glimpses I've known.</p>
+                <p>I don't know what is this journey's span,</p>
+                <p>I can't fathom how far we'll go, hand in hand.</p>
+                <p>But one thing is certain, my love, it's true,</p>
+                <p>I'll never let you wander, no matter what we go through.
+                <p>Even in my darkest days,
+                <p>You are the beacon of light, the radiant bliss I've seen many fall, fall in love with you 
+                <p>They may adore you, but not like I do 
+                <p>My heart's devotion is solely for you.
+                <p>This moment I've longed for, it's finally here, Hold me close, my love, draw me near.
+                <p>For in your embrace, I've found all I sought, Something I never thought now I've got,
+                <p>With your love I'm complete, in your arms, I feel home, 
+                <p>For you my darling the love is eternal and profound.</p>
+            </div>
+            <div class="box">
+                <h2>LOVE</h2>
+                <p>I've come to believe that we are forever bound to ones,</p> 
+                <p>that we share blood with, but still I see,</p>
+                <p>A war in your eyes against your blood for me.</p>
+                <p>You say I don't express enough but only if You saw me glare at you when you spin in that dress,</p>
+                <p>Or thank go for this indwelling bliss.</p>
+                <p>My love for you is beyond reason or promise,</p>
+                <p>beyond peace or happiness and I would still love you</p>
+                <p>Against all the discouragement of this world.</p>
+                <p>They ask me to give up cause they fail to fathom my love,</p>
+                <p>For me the possibility of you is better than the reality of others.</p>
+                <p>And this shall be my expression of love,</p> 
+                <p>You might not be at the end of my story,</p>
+                <p>But, even in oblivion you shall be in my memory.</p>
+            </div>
+        </div>
+    </main>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="one">
+        <path d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"></path>
+    </svg>
+</body>
+
+</html>

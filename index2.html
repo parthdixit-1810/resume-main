@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Share Tech', sans-serif;
+            font-size: 16px;
+            color: #505050;
+            background: #eee;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        main {
+            position: relative;
+            padding: 7vh 10px 10vh; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .wave {
+            width: 100vw;
+            height: 150px;
+            position: fixed;
+            bottom: 0;
+            fill: #1b7477;
+            z-index: -1;
+        }
+
+        h1, h2, h3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1em;
+            word-spacing: -.1em;
+            letter-spacing: -.05em;
+            margin-bottom: 15px;
+        }
+
+        h1 span, h2 span, h3 span {
+            background: rgba(238, 238, 238, .7);
+            padding: 5px 7px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3:active {
+            color: #51b5ac;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            cursor: pointer;
+            display: flex; 
+            align-items: center; 
+        }
+
+        h2 span {
+            margin-left: 5px; 
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .subtext {
+            position: relative;
+            border-radius: 10px;
+            background: white;
+            border: 1px solid #bbb;
+            padding: 13px;
+            line-height: 1.5em;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .subtext ul {
+            margin: 0;
+            padding: 0 25px;
+        }
+
+        .subtext a {
+            color: #0a9;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: .2s all ease;
+        }
+
+        .subtext a:hover,
+        h2:hover, h3:hover {
+            color: #777;
+        }
+
+        .hex:hover {
+            transform: rotate(30deg);
+        }
+
+        .hex,
+        .hex:before,
+        .hex:after {
+            height: 1em;
+            width: .59em;
+            border: solid;
+            border-width: 1px 0;
+            border-radius: 2px;
+            box-sizing: border-box;
+        }
+
+        main .hex {
+            position: relative;
+            display: inline-block;
+            margin-right: .5em;
+            transition: .4s all ease;
+        }
+
+        .hex:before,
+        .hex:after {
+            content: '';
+            position: absolute;
+            margin-top: -1px;
+            margin-left: 0;
+            border: inherit;
+        }
+
+        .hex:before {
+            transform: rotate(60deg);
+        }
+
+        .hex:after {
+            transform: rotate(-60deg);
+        }
+
+        .hex,
+        .hex:before,
+        .hex:after,
+        .subtext {
+            border-color: #bbb;
+        }
+
+        .hex.moved {
+            transform: rotate(30deg);
+        }
+
+        #image-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #image-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #image-container img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <main id="content">
+        <div id="image-container">
+            <img src="./IMG_1079.jpeg" alt="Profile Image">
+        </div>
+        <h1>
+            <div class="hex moved"></div><span>WELCOME TO MY RESUME!!</span>
+        </h1>
+        <div class="subtext" id="main">
+            <p>My name is Parth Dixit and I am a 20-year-old computer science engineering student at VIT Vellore. As an engineering student, I stand at the precipice of a world brimming with potential. While technical proficiency forms the bedrock of my journey, it is my imagination that propels me forward.</p>
+            <p>My insatiable curiosity drives me to explore the hidden depths of programming languages, unlocking their untapped possibilities. This website is an invitation for you to know more about me and get a detailed overview of my capabilities and capacities as well as my journey and work over the years.</p>
+        </div>
+        <h2>
+            <div class="hex"></div><span><a href="educaton.html">EDUCATION</a></span>
+        </h2>
+        <h2>
+            <div class="hex"></div><span><a href="sk.html">SKILLS</a></span>
+        </h2>
+        <h2>
+            <div class="hex"></div><span><a href="e.html">EXPERIENCES</a></span>
+        </h2>
+        <h2>
+            <div class="hex"></div><span><a href="Achievements.html">ACHIEVEMENTS</a></span>
+        </h2>
+        <h2>
+            <div class="hex"></div><span><a href="con2.html">CONTACT ME</a></span>
+        </h2>
+        <h2>
+            <div class="hex"></div><span><a href="feedback.html">FEEDBACK</a></span>
+        </h2>
+    </main>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="one">
+        <path d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"></path>
+    </svg>
+    <div id="hex-holder">
+        <div class="hex" id="uno"></div>
+        <div class="hex" id="dos"></div>
+        <div class="hex" id="tres"></div>
+    </div>
+</body>
+
+</html>

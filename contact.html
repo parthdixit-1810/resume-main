@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 670px) {
+            main {
+                margin: 0 15px;
+            }
+        }
+
+        h1, h2, h3 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1em;
+            word-spacing: -.1em;
+            letter-spacing: -.05em;
+            transition: .2s all ease;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        h1 span, h2 span, h3 span {
+            background: rgba(238, 238, 238, .7);
+            padding: 5px 7px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3:active {
+            color: #51b5ac;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            cursor: pointer;
+        }
+
+        h3 {
+            cursor: pointer;
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column; 
+            width: 100%;
+            padding: 0 20px; 
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 100%; 
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+            font-style: italic; 
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box p {
+            margin: 10px 0; 
+        }
+
+        .wave {
+            width: 100vw;
+            height: 150px;
+            position: fixed;
+            bottom: 0;
+            fill: #1b7477;
+            z-index: -1;
+        }
+
+        #one {
+            height: 180px;
+            fill: #8adbd3;
+            width: 120vw;
+            left: -10vw;
+        }
+
+        #bg {
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <main>
+        <h1>
+            <div class="hex moved"></div><span>CONTACTS</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <h2>Official Contacts</h2>
+                <p>Mobile Number: 7800007233</p>
+                <p>Email id: parth2012dixit@gmail.com</p>
+            </div>
+            <div class="box">
+                <h2>Social Media Handles</h2>
+                <p>Linkedin: <a href="https://www.linkedin.com/feed/">Parth Dixit</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/parth2012dixit/">parth2012dixit</a></p>
+                <p>Twitter: <a href="https://twitter.com/parthdixit10">parthdixit10</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/">Parth Dixit</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+

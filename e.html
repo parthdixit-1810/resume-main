@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EXPERIENCES</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Share Tech', sans-serif;
+            font-size: 16px;
+            color: #505050;
+            background: #eee;
+            overflow-x: hidden;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 7vh 0 10vh;
+            opacity: 1;
+            margin-top: -5px;
+        }
+
+        @media all and (min-width: 670px) {
+            main {
+                width: 570px;
+                margin-left: 10vw;
+            }
+        }
+
+        @media all and (max-width: 670px) {
+            main {
+                margin: 0 15px;
+            }
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+            width: 100%; 
+            font-style: italic;
+        }
+
+        .wave {
+            width: 100vw;
+            height: 150px;
+            position: fixed;
+            bottom: 0;
+            fill: #1b7477;
+            z-index: -1;
+        }
+
+        #one {
+            height: 180px;
+            fill: #8adbd3;
+            width: 120vw;
+            left: -10vw;
+        }
+
+        h1, h2, h3 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1em;
+            word-spacing: -.1em;
+            letter-spacing: -.05em;
+            transition: .2s all ease;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        h1 span, h2 span, h3 span {
+            background: rgba(238, 238, 238, .7);
+            padding: 8px 12px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3:active {
+            color: #51b5ac;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            cursor: pointer;
+            font-size: 1.3em;
+        }
+
+        p {
+            line-height: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        #bg {
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <main>
+        <h1>
+            <div class="hex moved"></div><span>EXPERIENCE</span>
+        </h1>
+        <div class="box">
+            <h2>SENIOR CORE MEMBER ~ TAG VIT</h2>
+            <p>
+                My time as a senior core in the Technology and Gaming club taught me a lot of things. It was a training ground where I honed my leadership and management skills in the crucible of real-world challenges. As treasurer, I meticulously balanced budgets, negotiated with vendors, and learned the importance of fiscal responsibility. Organizing events forced me to delegate tasks effectively, motivate teams, and adapt to unexpected hurdles. Through heated debates and collaborative brainstorming, I developed my communication skills, fostering consensus and ensuring everyone's voices were heard. Every project, every challenge, was a lesson in leadership, teaching me how to inspire, delegate, and navigate complex situations with a cool head and a clear vision.
+            </p>
+        </div>
+        <div class="box">
+            <h2>EDITORIAL TEAM ~ APPLE DEVELOPERS GROUP</h2>
+            <p>
+                Joining the editorial team of the Apple Developers Group wasn't just about writing articles; it was a crash course in tech communication and collaboration. As part of a dedicated crew, I learned to translate complex coding concepts into engaging narratives for a diverse audience. We brainstormed ideas, debated approaches, and meticulously edited each other's work, fostering critical thinking and honing my communication skills. Collaborating with passionate developers exposed me to cutting-edge technologies and broadened my understanding of the ever-evolving landscape of app development. More than just content creation, it was about community building, using our words to ignite curiosity and encourage collaboration within the club. This experience not only solidified my passion for tech communication but also equipped me with invaluable teamwork skills, adaptability, and a deeper appreciation for the power of clear and concise language in the digital age.
+            </p>
+        </div>
+    </main>
+</body>
+</html>

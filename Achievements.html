@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACHIEVEMENTS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 670px) {
+            main {
+                margin: 0 15px;
+            }
+        }
+
+        h1, h2, h3 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1em;
+            word-spacing: -.1em;
+            letter-spacing: -.05em;
+            transition: .2s all ease;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        h1 span, h2 span, h3 span {
+            background: rgba(238, 238, 238, .7);
+            padding: 5px 7px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3:active {
+            color: #51b5ac;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
+
+        h2 {
+            cursor: pointer;
+        }
+
+        h3 {
+            cursor: pointer;
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 20px; 
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: calc(48% - 20px); 
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+            font-style: italic; 
+            transition: transform 0.2s ease-in-out;
+            font-style: italic;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box p {
+            margin: 10px 0; 
+        }
+
+        .wave {
+            width: 100vw;
+            height: 150px;
+            position: fixed;
+            bottom: 0;
+            fill: #1b7477;
+            z-index: -1;
+        }
+
+        #one {
+            height: 180px;
+            fill: #8adbd3;
+            width: 120vw;
+            left: -10vw;
+        }
+
+        #bg {
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <main>
+        <h1>
+            <div class="hex moved"></div><span>ACHIEVEMENTS</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <h2>Academic Awards</h2>
+                <ul>
+                <li>Silverzone Mahematics Olympiad Silver Medal</li>
+                <li>School Academic Excellence Award</li>
+                <li>Brain O Brain Reasoning Olympiad Gold Medal (3 times)</li>
+                <li>Science Olympiad Earth Day Medalist</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Sports Awards</h2>
+                <ul>
+                <li>U-12 District Boys Silver Medal</li>
+                <li>Pinnacle 2019 Gold Medal</li>
+                <li>Sports Captain of School Team</li>
+                <li>U-16 Zonal Cricket Participation</li>
+                <li>State Level Chess championship commendation (2 times)</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Extra-curricular Awards</h2>
+                <ul>
+                <li>Story telling Award</li>
+                <li>Creative Writing Award (2 times)</li>
+                <li>Social Welfare Award for Cancer Aid</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Marks Achieved</h2>
+                <ul>
+                <li>97 percentage in Class 10th</li>
+                <li>95 percentage in class 12th</li>
+                <li>Current college CGPA- 9.51</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave" id="one">
+        <path d="M-13.36,88.98 C168.85,182.73 276.72,-73.84 506.31,79.10 L500.00,150.00 L0.00,150.00 Z"></path>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skills Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech:wght@400;700&display=swap">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Share Tech', sans-serif;
+            font-size: 16px;
+            color: #505050;
+            background: #eee;
+            overflow-x: hidden;
+        }
+
+        main {
+            position: relative;
+            padding: 7vh 0 10vh;
+            opacity: 1;
+            margin-top: -5px;
+            max-height: none;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #1b7477 #eee;
+        }
+
+        @media all and (min-width: 670px) {
+            main {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+
+        .subtext {
+            position: relative;
+            border-radius: 10px;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+            text-align: justify; /* Align text justified */
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 30px;
+        }
+
+        .skill-box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            font-size: 16px; /* Adjusted font size */
+            line-height: 1.6em;
+            transition: transform 0.2s;
+        }
+
+        .skill-box:hover {
+            transform: scale(1.05);
+        }
+
+        .wave {
+            width: 100vw;
+            height: 150px;
+            position: fixed;
+            bottom: 0;
+            fill: #1b7477;
+            z-index: -1;
+        }
+
+        #one {
+            height: 180px;
+            fill: #8adbd3;
+            width: 120vw;
+            left: -10vw;
+        }
+
+        h1, h2, h3 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1em;
+            word-spacing: -.1em;
+            letter-spacing: -.05em;
+            transition: .2s all ease;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        h1 span, h2 span, h3 span {
+            background: rgba(238, 238, 238, .7);
+            padding: 8px 12px; /* Adjusted padding */
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3:active {
+            color: #51b5ac;
+        }
+
+        h1 {
+            font-size: 2.5em; /* Adjusted font size */
+        }
+
+        h2 {
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            cursor: pointer;
+            font-size: 1.3em;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        #bg {
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <main data-simplebar>
+        <h1>
+            <div class="hex moved"></div><span>SKILLS</span>
+        </h1>
+        <div class="subtext" id="main">
+            <p>My approach to personal and professional development is grounded in a diverse skillset that encompasses both technical proficiency and the ability to connect and collaborate effectively.</p>
+            <p>This comprehensive skillset equips me to thrive in dynamic environments, contribute meaningfully to collaborative projects, and continuously seek new challenges and opportunities to learn and grow.
+            </p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h3>Music</h3>
+                <p>While logic and problem-solving form the basis of my analytical thinking, music serves as a potent source of inspiration. The intricacies of composition and analysis not only inform my creative writing but also fuel my problem-solving approach, fostering an appreciation for interconnectedness and out-of-the-box solutions.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Problem-Solving</h3>
+                <p>I find immense satisfaction in tackling complex challenges, approaching each one with a methodical and analytical mindset. Programming languages serve as my toolbox, their structures and logic forming the foundation for my solutions. Each successful resolution, meticulously crafted and elegantly executed, fuels my desire to continuously refine my analytical skills.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Creative Writing</h3>
+                <p>Beyond the technical realm, I seek expression through the art of poetry. Words become my artistic palette, allowing me to delve into the depths of human experience and weave narratives that resonate on both an intellectual and emotional level. This ability to evoke emotions through carefully chosen language serves as a powerful tool for communication and reflection.</p>
+                <p><a href="http://127.0.0.1:3000/poem.html">Some of my writings</a></p>
+            </div>
+            <div class="skill-box">
+                <h3>Expertise in Programming Languages (C, C++, Java)</h3>
+                <p>My expertise extends beyond theoretical understanding, encompassing practical proficiency in various programming languages. Each language, from the raw power of C to the object-oriented elegance of Java, presents its own unique set of challenges and opportunities. I navigate these languages with confidence, transforming abstract ideas into tangible digital realities.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Interpersonal Skills & Teamwork</h3>
+                <p>I firmly believe that collaboration is the driving force behind innovation. My well-honed interpersonal skills allow me to build rapport, communicate effectively, and foster a collaborative spirit within teams. I actively seek opportunities to connect with diverse perspectives, understanding that the synergy of different viewpoints leads to richer outcomes.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Soft Skills</h3>
+                <p>Beyond technical expertise, I possess well-developed soft skills that are essential for success in any professional setting. These include self-motivation, strong organizational skills, a commitment to continuous learning, and adept time management, ensuring that I consistently meet deadlines while maintaining a high standard of work.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

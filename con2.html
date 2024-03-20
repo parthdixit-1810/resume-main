@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1em;
+            word-spacing: -.1em;
+            letter-spacing: -.05em;
+            transition: .2s all ease;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            background: rgba(238, 238, 238, .7);
+            padding: 5px 7px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1:active {
+            color: #51b5ac;
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+            font-style: italic;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #0a9;
+            text-decoration: underline;
+            transition: .2s all ease;
+        }
+
+        a:hover {
+            color: #777;
+        }
+        h1,h2{
+            color: #51b5ac;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg"></canvas>
+    <main>
+        <h1>
+            <div class="hex moved"></div><span>CONTACTS</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <h2>Official Contacts</h2>
+                <p>Mobile Number: 7800007233</p>
+                <p>Email id: parth2012dixit@gmail.com</p>
+            </div>
+            <div class="box">
+                <h2>Social Media Handles</h2>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/parth-dixit-977850218">Parth Dixit</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/parth2012dixit/">parth2012dixit</a></p>
+                <p>Twitter: <a href="https://twitter.com/parthdixit10">parthdixit10</a></p>
+                <p>Facebook: <a href="https://m.facebook.com/profile.php/?id=100004471359376">Parth Dixit</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
